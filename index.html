@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glam House</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="#inicio" class="logo">
+                <span>GLAM</span>
+                <small>HOUSE</small>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <!-- LUPA -->
+                <button class="icon-button" id="searchButton" aria-label="Buscar">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.5"></circle>
+                        <line x1="16" y1="16" x2="21" y2="21"></line>
+                    </svg>
+
+                </button>
+
+
+                <!-- CARRITO -->
+                <button class="cart-button" id="cartBtn" aria-label="Abrir carrito">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                        <circle cx="10" cy="19" r="1.3"></circle>
+                        <circle cx="18" cy="19" r="1.3"></circle>
+                    </svg>
+
+                    <span id="cartCounter">0</span>
+
+                </button>
+
+
+                <!-- MENÚ MÓVIL -->
+                <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <p class="hero-small">CUIDADO CAPILAR</p>
+
+            <h1>
+                Tu cabello merece
+                <span>lo mejor</span>
+            </h1>
+
+            <p>
+                Descubre nuestra selección de productos
+                para cuidar, hidratar y transformar tu cabello.
+            </p>
+
+            <a href="#productos" class="primary-button">
+                Ver productos
+            </a>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-circle"></div>
+
+            <div class="hero-bottle">
+
+                <div class="bottle-cap"></div>
+
+                <div class="bottle-body">
+
+                    <div class="bottle-label">
+                        <strong>GLAM</strong>
+                        <small>HOUSE</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro-bar">
+
+        <div>
+            <strong>Productos seleccionados</strong>
+            <span>para el cuidado de tu cabello</span>
+        </div>
+
+        <div>
+            <strong>Compra fácil</strong>
+            <span>y recibe atención personalizada</span>
+        </div>
+
+        <div>
+            <strong>Pedidos por WhatsApp</strong>
+            <span>rápido y sencillo</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section class="products-section" id="productos">
+
+        <div class="section-header">
+
+            <p class="section-small">NUESTRA COLECCIÓN</p>
+
+            <h2>
+                Productos para
+                <span>ti</span>
+            </h2>
+
+            <p>
+                Encuentra el producto ideal para complementar
+                tu rutina de cuidado capilar.
+            </p>
+
+        </div>
+
+
+        <!-- BUSCADOR -->
+
+        <div class="search-container" id="searchContainer">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar producto..."
+            >
+
+            <button id="closeSearch" aria-label="Cerrar búsqueda">
+                ✕
+            </button>
+
+        </div>
+
+
+        <!-- FILTROS -->
+
+        <div class="filters">
+
+            <button class="filter-button active" data-filter="todos">
+                Todos
+            </button>
+
+            <button class="filter-button" data-filter="crema">
+                Cremas
+            </button>
+
+            <button class="filter-button" data-filter="gelatina">
+                Gelatinas
+            </button>
+
+            <button class="filter-button" data-filter="oleo">
+                Óleos
+            </button>
+
+        </div>
+
+
+        <!-- ================= PRODUCTOS ================= -->
+
+        <div class="product-grid" id="productGrid">
+
+
+            <!-- ================= CREMAS ================= -->
+
+            <article class="product-card" data-category="crema" data-name="Crema Aguacate">
+
+                <div class="product-image image-one">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaAguacate.jpeg"
+                         alt="Crema Aguacate"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Aguacate</h3>
+                    <p>Nutrición e hidratación para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Aguacate"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Amido">
+
+                <div class="product-image image-two">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaAmido.jpeg"
+                         alt="Crema Amido"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Amido</h3>
+                    <p>Cuidado y suavidad para tu cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Amido"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Argán">
+
+                <div class="product-image image-three">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaArgan.jpeg"
+                         alt="Crema Argán"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Argán</h3>
+                    <p>Hidratación y cuidado para tu cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Argán"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Babosa">
+
+                <div class="product-image image-four">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaBabosa.jpeg"
+                         alt="Crema Babosa"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Babosa</h3>
+                    <p>Hidratación y suavidad.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Babosa"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Banana">
+
+                <div class="product-image image-five">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaBanana.jpeg"
+                         alt="Crema Banana"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Banana</h3>
+                    <p>Nutrición para una rutina completa.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Banana"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Bomba">
+
+                <div class="product-image image-six">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaBomba.jpeg"
+                         alt="Crema Bomba"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Bomba</h3>
+                    <p>Tratamiento para el cuidado diario.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Bomba"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Coco">
+
+                <div class="product-image image-one">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaCoco.jpeg"
+                         alt="Crema Coco"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Coco</h3>
+                    <p>Suavidad e hidratación para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Coco"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Definidos">
+
+                <div class="product-image image-two">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaDemaiado.jpeg"
+                         alt="Crema Demaiado"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Demaiado</h3>
+                    <p>Ayuda a definir y cuidar tus rizos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Definidos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Divino">
+
+                <div class="product-image image-three">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaDivino.jpeg"
+                         alt="Crema Divino"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Divino</h3>
+                    <p>Cuidado y definición para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Divino"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Divino Potão">
+
+                <div class="product-image image-four">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaDivinoPotao.jpeg"
+                         alt="Crema Divino Potão"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Divino Potão</h3>
+                    <p>Tratamiento para una rutina de cuidado.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Divino Potão"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Dona">
+
+                <div class="product-image image-five">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaDona.jpeg"
+                         alt="Crema Dona"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Dona</h3>
+                    <p>Hidratación y cuidado diario.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Dona"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Fresa">
+
+                <div class="product-image image-six">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaFresa.jpeg"
+                         alt="Crema Fresa"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Fresa</h3>
+                    <p>Suavidad y cuidado para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Fresa"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Cachinhos">
+
+                <div class="product-image image-one">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaisCachinhos.jpeg"
+                         alt="Crema Mais Cachinhos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Mais Cachinhos</h3>
+                    <p>Definición y cuidado para los rizos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Cachinhos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Cachos">
+
+                <div class="product-image image-two">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaisCachos.jpeg"
+                         alt="Crema Mais Cachos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Mais Cachos</h3>
+                    <p>Definición e hidratación para rizos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Cachos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Crespinhos">
+
+                <div class="product-image image-three">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaisCrespinhos.jpeg"
+                         alt="Crema Mais Crespinhos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Mais Crespinhos</h3>
+                    <p>Cuidado y definición.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Crespinhos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Crespos">
+
+                <div class="product-image image-four">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaisCrespos.jpeg"
+                         alt="Crema Mais Crespos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Mais Crespos</h3>
+                    <p>Definición y cuidado del cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Crespos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Mais Lisos">
+
+                <div class="product-image image-five">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaisLisos.jpeg"
+                         alt="Crema Mais Lisos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Mais Lisos</h3>
+                    <p>Cuidado y suavidad para cabellos lisos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Mais Lisos"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Maracuyá">
+
+                <div class="product-image image-six">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaMaracuya.jpeg"
+                         alt="Crema Maracuyá"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Maracuyá</h3>
+                    <p>Hidratación y suavidad.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Maracuyá"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Poção de Amor">
+
+                <div class="product-image image-one">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaPociondeAmor.jpeg"
+                         alt="Crema Pocao de Amor"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Poção de Amor</h3>
+                    <p>Una opción especial para tu rutina.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Pocao de Amor"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Sandía">
+
+                <div class="product-image image-two">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaSandia.jpeg"
+                         alt="Crema Sandía"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Sandía</h3>
+                    <p>Hidratación y cuidado diario.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Sandía"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="crema" data-name="Crema Uva">
+
+                <div class="product-image image-three">
+                    <span class="product-tag">CREMA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/cremas/CremaUva.jpeg"
+                         alt="Crema Uva"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Cuidado capilar</span>
+                    <h3>Crema Uva</h3>
+                    <p>Suavidad y cuidado para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$30.000</strong>
+
+                        <button class="add-button"
+                                data-name="Crema Uva"
+                                data-price="30000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- ================= GELATINAS ================= -->
+
+            <article class="product-card" data-category="gelatina" data-name="Gelatina Mais Cachos">
+
+                <div class="product-image image-four">
+                    <span class="product-tag">GELATINA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/gelatinas/GelatinaMaisCachos.jpeg"
+                         alt="Gelatina Mais Cachos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Definición</span>
+                    <h3>Gelatina Mais Cachos</h3>
+                    <p>Definición para tus rizos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$33.000</strong>
+
+                        <button class="add-button"
+                                data-name="Gelatina Mais Cachos"
+                                data-price="33000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="gelatina" data-name="Gelatina Maracuyá">
+
+                <div class="product-image image-five">
+                    <span class="product-tag">GELATINA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/gelatinas/GelatinaMaracuya.jpeg"
+                         alt="Gelatina Maracuyá"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Definición</span>
+                    <h3>Gelatina Maracuyá</h3>
+                    <p>Ayuda a definir el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$33.000</strong>
+
+                        <button class="add-button"
+                                data-name="Gelatina Maracuyá"
+                                data-price="33000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="gelatina" data-name="Gelatina Sandía">
+
+                <div class="product-image image-six">
+                    <span class="product-tag">GELATINA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/gelatinas/GelatinaSandia.jpeg"
+                         alt="Gelatina Sandía"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Definición</span>
+                    <h3>Gelatina Sandía</h3>
+                    <p>Definición y control.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$33.000</strong>
+
+                        <button class="add-button"
+                                data-name="Gelatina Sandía"
+                                data-price="33000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="gelatina" data-name="Gelatina Uva">
+
+                <div class="product-image image-one">
+                    <span class="product-tag">GELATINA</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/gelatinas/GelatinaUva.jpeg"
+                         alt="Gelatina Uva"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Definición</span>
+                    <h3>Gelatina Uva</h3>
+                    <p>Definición y cuidado.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$33.000</strong>
+
+                        <button class="add-button"
+                                data-name="Gelatina Uva"
+                                data-price="33000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- ================= ÓLEOS ================= -->
+
+            <article class="product-card" data-category="oleo" data-name="Óleo Aguacate">
+
+                <div class="product-image image-two">
+                    <span class="product-tag">ÓLEO</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/oleos/OleoAguacate.jpeg"
+                         alt="Óleo Aguacate"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Nutrición</span>
+                    <h3>Óleo Aguacate</h3>
+                    <p>Nutrición y cuidado para el cabello.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$35.000</strong>
+
+                        <button class="add-button"
+                                data-name="Óleo Aguacate"
+                                data-price="35000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="oleo" data-name="Óleo Mais Cachos">
+
+                <div class="product-image image-three">
+                    <span class="product-tag">ÓLEO</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/oleos/OleoMaisCachos.jpeg"
+                         alt="Óleo Mais Cachos"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Nutrición</span>
+                    <h3>Óleo Mais Cachos</h3>
+                    <p>Cuidado y nutrición para rizos.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$35.000</strong>
+
+                        <button class="add-button"
+                                data-name="Óleo Mais Cachos"
+                                data-price="35000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="oleo" data-name="Óleo Maracuyá">
+
+                <div class="product-image image-four">
+                    <span class="product-tag">ÓLEO</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/oleos/OleoMaracuya.jpeg"
+                         alt="Óleo Maracuyá"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Nutrición</span>
+                    <h3>Óleo Maracuyá</h3>
+                    <p>Nutrición y suavidad.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$35.000</strong>
+
+                        <button class="add-button"
+                                data-name="Óleo Maracuyá"
+                                data-price="35000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="oleo" data-name="Óleo Sandía">
+
+                <div class="product-image image-five">
+                    <span class="product-tag">ÓLEO</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/oleos/OleoSandia.jpeg"
+                         alt="Óleo Sandía"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Nutrición</span>
+                    <h3>Óleo Sandía</h3>
+                    <p>Cuidado y nutrición.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$35.000</strong>
+
+                        <button class="add-button"
+                                data-name="Óleo Sandía"
+                                data-price="35000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="oleo" data-name="Óleo Uva">
+
+                <div class="product-image image-six">
+                    <span class="product-tag">ÓLEO</span>
+                    <button class="favorite" aria-label="Agregar a favoritos">♡</button>
+
+                    <img src="Imagenes/oleos/OleoUva.jpeg"
+                         alt="Óleo Uva"
+                         class="product-photo">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">Nutrición</span>
+                    <h3>Óleo Uva</h3>
+                    <p>Nutrición y cuidado capilar.</p>
+
+                    <div class="product-bottom">
+                        <strong class="price">$35.000</strong>
+
+                        <button class="add-button"
+                                data-name="Óleo Uva"
+                                data-price="35000">+</button>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+
+    <section class="about-section" id="nosotros">
+
+        <div class="about-content">
+
+            <p class="section-small">SOBRE NOSOTROS</p>
+
+            <h2>
+                Belleza que comienza
+                <span>con el cuidado</span>
+            </h2>
+
+            <p>
+                En Glam House creemos que cuidar tu cabello
+                también es una forma de cuidar de ti.
+            </p>
+
+            <p>
+                Seleccionamos productos pensados para acompañar
+                diferentes tipos de cabello y diferentes rutinas
+                de cuidado.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <span>GLAM HOUSE</span>
+
+            <h3>
+                Tu rutina.
+                <br>
+                Tu belleza.
+                <br>
+                Tu estilo.
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BENEFICIOS ================= -->
+
+    <section class="benefits-section">
+
+        <div class="section-header">
+
+            <p class="section-small">¿POR QUÉ GLAM HOUSE?</p>
+
+            <h2>
+                Pensado para
+                <span>ti</span>
+            </h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit">
+                <div class="benefit-icon">♡</div>
+                <h3>Cuidado</h3>
+                <p>
+                    Productos seleccionados para complementar
+                    tu rutina capilar.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">✦</div>
+                <h3>Variedad</h3>
+                <p>
+                    Diferentes opciones para encontrar
+                    lo que buscas.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Fácil compra</h3>
+                <p>
+                    Agrega tus productos al carrito y realiza
+                    tu pedido fácilmente.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">⌁</div>
+                <h3>Atención</h3>
+                <p>
+                    Realiza tu pedido directamente por WhatsApp.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section class="contact-section" id="contacto">
+
+        <div>
+
+            <p class="section-small">CONTACTO</p>
+
+            <h2>
+                ¿Tienes alguna
+                <span>pregunta?</span>
+            </h2>
+
+            <p>
+                Estamos disponibles para ayudarte y recibir
+                tus pedidos.
+            </p>
+
+        </div>
+
+        <a
+            href="https://wa.me/573000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-button">
+
+            Contactar por WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <div>
+                <p>MI COMPRA</p>
+                <h2>Carrito</h2>
+            </div>
+
+            <button id="closeCart" aria-label="Cerrar carrito">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                        <circle cx="10" cy="19" r="1.3"></circle>
+                        <circle cx="18" cy="19" r="1.3"></circle>
+                    </svg>
+
+                </div>
+
+                <p>Tu carrito está vacío</p>
+
+                <span>
+                    Agrega productos para comenzar.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+            <button
+                id="checkoutButton"
+                class="checkout-button">
+
+                Realizar pedido
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MODAL PEDIDO ================= -->
+
+    <div class="order-overlay" id="orderOverlay">
+
+        <div class="order-modal">
+
+            <button
+                class="close-order"
+                id="closeOrder"
+                aria-label="Cerrar">
+
+                ✕
+
+            </button>
+
+
+            <p class="section-small">
+                FINALIZAR PEDIDO
+            </p>
+
+
+            <h2>
+                Datos de
+                <span>entrega</span>
+            </h2>
+
+
+            <p class="order-description">
+                Completa tus datos para preparar tu pedido.
+            </p>
+
+
+            <form id="orderForm">
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="customerAddress">
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerAddress"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="customerCity">
+                            Ciudad
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerCity"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customerPhone">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentMethod">
+                        Método de pago
+                    </label>
+
+                    <select
+                        id="paymentMethod"
+                        required>
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="Efectivo">
+                            Efectivo
+                        </option>
+
+                        <option value="Transferencia">
+                            Transferencia
+                        </option>
+
+                        <option value="Nequi">
+                            Nequi
+                        </option>
+
+                        <option value="Daviplata">
+                            Daviplata
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="send-order-button">
+
+                    Enviar pedido por WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+        Producto agregado al carrito
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
